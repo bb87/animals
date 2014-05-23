@@ -1,0 +1,28 @@
+extends layout
+
+block head
+
+block script
+    script(src="./js/animal.js")
+    script(src="./js/animal_view.js")
+    script(src="./js/mammal.js")
+    script(src="./js/hybrid.js")
+    script(src="./js/insect.js")
+    script(src="./js/cheetah.js")
+    script(src="./js/cheetah_view.js")
+    script(src="./js/client.js")
+    //- script(type="text/javascript").
+    //-     $(document).ready(function(){
+    //-         console.log("HEY THE DOCUMENT IS READY!");
+    //-         var animal = new Cheetah();
+    //-         console.log(animal, 'animal');
+    //-         var animalView = new CheetahView({
+    //-             model: animal
+    //-         });
+    //-         console.log(animalView, "it's a view!");
+    //-         window.animalView = animalView;
+    //-         $('#animals').append(animalView.render().el);
+    //-     });
+
+block body
+    #animals
